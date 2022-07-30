@@ -1,0 +1,174 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prediction site</title>
+    <style>
+      .container {
+        background-image: url("{% static 'diabetesprediction\images\k.jpg' %}");
+        padding: 5%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+      }
+      .title {
+        color: red;
+        font-family: arial, sans-serif;
+        font-weight: bold;
+      }
+      .form-horizontal {
+        margin-left: 50px;
+      }
+      label {
+        color: white;
+        font-family: arial, sans-serif;
+      }
+      .download {
+        color: white;
+        text-align: center;
+        font-size: small;
+        font-weight: bold;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 align="center" class="title">PREDICTION FORM</h2>
+      RESULT : {{result2}}
+      <br /><br />
+      <form class="form-horizontal" action="result">
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email"
+            >DIABETES PEDIGREE FUNCTION:</label
+          >
+          <div class="col-sm-8">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="For eg:4.8"
+              name="n1"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2">SKIN THICKNESS:</label>
+          <div class="col-sm-8">
+            <input
+              type="text"
+              class="form-control"
+              id="pwd"
+              placeholder="Enter value of your skin thickness"
+              name="n2"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">PREGNANCIES:</label>
+          <div class="col-sm-8">
+            <input
+              type="text"
+              class="form-control"
+              placeholder=" Enter the pregnancies value"
+              name="n3"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">GLUCOSE:</label>
+          <div class="col-sm-8">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter Glucose value(level)"
+              name="n4"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email"
+            >BLOOD PRESSURE:</label
+          >
+          <div class="col-sm-8">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter BP value"
+              name="n5"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">INSULIN:</label>
+          <div class="col-sm-8">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter insulin value"
+              name="n6"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">BMI:</label>
+          <div class="col-sm-8">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter your BMI value"
+              name="n7"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">AGE:</label>
+          <div class="col-sm-8">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter your age"
+              name="n8"
+              required
+            />
+          </div>
+        </div>
+        <br />
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-danger">Submit</button>
+          </div>
+        </div>
+      </form>
+      <br />
+      <a
+        href="https://github.com/ugyen27/Diabetespredictionsystem"
+        class="download" target="_blank"
+        >Download Dataset</a
+      >
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+web: gunicorn diabetesprediction.wsgi --log-file -
