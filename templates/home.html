@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DiabetesPredictionSystem</title>
+    <!-- Inline CSS STYLE -->
+    <style>
+      body {
+        color: white;
+        background-image: url("{% static 'diabetesprediction\images\ugyen.gif' %}");
+        background-repeat: repeat;
+        background-size: cover;
+      }
+      div {
+        color: white;
+      }
+      h1 {
+        color: "white";
+        padding: 25px;
+        font-family: arial, sans-serif;
+        margin-top: 150px;
+      }
+      h2 {
+        color: "white";
+        font-family: arial, sans-serif;
+      }
+      input[type="submit"] {
+        background-color: #4dc3ff;
+        border: 2px;
+        color: white;
+        padding: 20px 32px;
+        cursor: pointer;
+        margin-top: 20px;
+        border-radius: 5px;
+        font-size: 23px;
+      }
+      p {
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+      }
+      a {
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+        color: white;
+      }
+    </style>
+    <!-- Inline CSS STYLE ENDING -->
+  </head>
+  <body>
+    <div align="center">
+      <h1>WELCOME TO DIABETES PREDICTION SYSTEM</h1>
+      <form action="predict">
+        <input type="submit" name="" id="" value="Lets get started!" />
+      </form>
+      <br />
+      <a
+        href="https://github.com/ugyen27/Diabetespredictionsystem"
+        target="_blank"
+        >Download Dataset</a
+      >
+      <h1>ABOUT SYSTEM</h1>
+      <p>
+        Prediction of diabetes at an early stage can lead to improved treatment.
+        Basically this system is build <br />
+        to predict whether you have a diabetese disease or not.
+      </p>
+    </div>
+  </body>
+</html>
